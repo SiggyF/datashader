@@ -56,7 +56,12 @@ HoloViz = "https://holoviz.org/"
 Repository = "https://github.com/holoviz/datashader"
 
 [dependency-groups]
-tests = ["pytest", "hypothesis"]
+tests = [
+    "pytest",
+    "hypothesis",
+    "geopandas>=1.1.4",
+    "shapely>=2.1.2",
+]
 
 [tool.hatch.version]
 source = "vcs"

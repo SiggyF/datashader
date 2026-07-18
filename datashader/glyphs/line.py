@@ -1072,6 +1072,7 @@ def _build_draw_segment(append, map_onto_pixel, expand_aggs_and_cols, line_width
         if not skip:
             clipped = clipped_start or clipped_end
             segment_start = segment_start or clipped_start
+            segment_end = segment_end or clipped_end
             x0_2, y0_2 = map_onto_pixel(
                 sx, tx, sy, ty, xmin, xmax, ymin, ymax, x0_1, y0_1
             )
